@@ -18,7 +18,7 @@ csv_file.writeheader()
 with open(fileToRead, "r", encoding="utf8") as fileHandle:
     data = fileHandle.readlines()
 
-    #can loop directly over fileHandle too
+    #can loop directly over fileHandle too instead of calling readlines()
     for line in data:
         dictJsons = json.loads(line)
 
